@@ -1,0 +1,24 @@
+{
+  "name": "QueenAva",
+  "description": "WhatsApp Multi Device Bot",
+  "repository": "https://github.com/MarshallParadox/QueenAva",
+  "logo": "https://p4.wallpaperbetter.com/wallpaper/622/813/220/cyber-angel-wallpaper-preview.jpg",
+  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
